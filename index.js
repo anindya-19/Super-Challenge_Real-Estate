@@ -1,7 +1,7 @@
 import { propertyForSaleArr } from "./properties/propertyForSaleArr.js"
 import { placeholderPropertyObj } from "./properties/placeholderPropertyObj.js"
 
-function getPropertyHtml(...propertyObjects) {
+function getPropertyHtml(propertyObjects) {
 /*
 SUPER CHALLENGE 💪
 
@@ -31,6 +31,18 @@ This is the HTML template 👇. Replace everything in UPPERCASE with property da
 </section> 
 */
     console.log(propertyObjects)
+
+    return propertyObjects.map( ({propertyLocation,priceGBP,roomsM2,comment,image}) => 
+        `<section class="card">
+            <img src="./images/${image}">
+            <div class="card-right">
+                <h2>${propertyLocation}</h2>
+                <h3>PRICE GBP</h3>
+                <p>COMMENT</p>
+                <h3>TOTAL SIZE IN SQUARE METRES m&sup2;</h3>
+            </div>
+        </section> `
+    ).join('')
 
     
 }
