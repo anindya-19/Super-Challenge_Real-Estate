@@ -1,4 +1,7 @@
-function getPropertyHtml() {
+import { propertyForSaleArr } from "./properties/propertyForSaleArr.js"
+import { placeholderPropertyObj } from "./properties/placeholderPropertyObj.js"
+
+function getPropertyHtml(...propertyObjects) {
 /*
 SUPER CHALLENGE 💪
 
@@ -27,7 +30,10 @@ This is the HTML template 👇. Replace everything in UPPERCASE with property da
     </div>
 </section> 
 */
+    console.log(propertyObjects)
+
+    
 }
 
 /***** Modify 👇 by adding an argument to the function call ONLY. *****/
-document.getElementById('container').innerHTML = getPropertyHtml()
+document.getElementById('container').innerHTML = getPropertyHtml(propertyForSaleArr)

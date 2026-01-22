@@ -1,4 +1,4 @@
-const placeholderPropertyObj = {
+export const placeholderPropertyObj = {
     area: '1 Joe Bloggs street',
     priceGBP: 100000,
     roomsM2: [16, 12, 6, 11, 5],
