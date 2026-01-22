@@ -37,9 +37,9 @@ This is the HTML template 👇. Replace everything in UPPERCASE with property da
             <img src="./images/${image}">
             <div class="card-right">
                 <h2>${propertyLocation}</h2>
-                <h3>PRICE GBP</h3>
-                <p>COMMENT</p>
-                <h3>TOTAL SIZE IN SQUARE METRES m&sup2;</h3>
+                <h3>${priceGBP}</h3>
+                <p>${comment}</p>
+                <h3>${roomsM2.reduce((a,b) => a+b,0)} m&sup2</h3>
             </div>
         </section> `
     ).join('')
